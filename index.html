@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6f2">
+  <title>Happy Birthday, Bestie! ✿</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+    :root{--paper:#fff8f4;--ink:#292527;--muted:#776d70;--pink:#f6b6c4;--berry:#d95674;--cream:#fff0df;--blue:#b6d9ef;--line:#eddeda;--green:#b9cdb4}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+    button{font:inherit} .wrap{width:min(1120px,calc(100% - 42px));margin:auto}
+    .topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f0e6e1}
+    .brand{font-weight:700;letter-spacing:.04em;display:flex;align-items:center;gap:9px}.brand-mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--berry);color:white;font-size:17px;box-shadow:0 4px 12px #d9567438}
+    .topbar a{font-size:13px;color:var(--muted);text-decoration:none}.topbar a:hover{color:var(--berry)}
+    .hero{min-height:610px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px;padding:62px 0 70px;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--berry);background:#fde8ec;border-radius:99px;padding:9px 14px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+    h1,h2,h3,p{margin-top:0} h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(52px,7vw,84px);line-height:.99;letter-spacing:-.045em;margin:24px 0 19px;font-weight:700}
+    h1 em{font-style:normal;color:var(--berry);display:block}.hero-copy{font-size:17px;color:var(--muted);line-height:1.8;max-width:470px}.hero-copy strong{color:var(--ink)}
+    .hero-actions{display:flex;gap:12px;align-items:center;margin-top:29px;flex-wrap:wrap}.btn{border:0;border-radius:99px;padding:14px 20px;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none;display:inline-flex;align-items:center;gap:9px}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--ink);color:white;box-shadow:0 8px 20px #29252722}.btn-light{background:white;color:var(--ink);border:1px solid var(--line)}
+    .hero-art{min-height:450px;position:relative;display:grid;place-items:center}.sun{position:absolute;width:360px;height:360px;border-radius:50%;background:#fbe9e0;top:38px;left:50%;transform:translateX(-50%)}
+    .hero-photo{position:absolute;z-index:2;width:260px;height:335px;object-fit:cover;object-position:center 24%;border:9px solid white;border-radius:150px 150px 24px 24px;box-shadow:0 20px 50px #6a41421c;transform:rotate(4deg);top:26px;left:calc(50% - 130px)}
+    .sticker{position:absolute;z-index:4;background:white;padding:12px 15px;border-radius:14px;box-shadow:0 7px 22px #573c3c17;font-size:13px;font-weight:700}.sticker.one{left:2%;top:54px;transform:rotate(-8deg)}.sticker.two{right:0;top:190px;transform:rotate(7deg)}.sticker.three{left:10%;bottom:22px;transform:rotate(5deg)}
+    .car-wrap{position:absolute;z-index:3;width:380px;bottom:34px;left:50%;transform:translateX(-50%);filter:drop-shadow(0 14px 9px #35333a26)}
+    .section{padding:92px 0}.section-head{text-align:center;max-width:620px;margin:0 auto 42px}.kicker{color:var(--berry);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin-bottom:11px}.section h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(34px,4vw,48px);line-height:1.1;letter-spacing:-.03em;margin-bottom:12px}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+    .memory-section{background:#fff}.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:174px;gap:17px}.photo-card{overflow:hidden;border-radius:18px;background:#f5e9e5;position:relative;box-shadow:0 5px 17px #3a24220b}.photo-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}.photo-card:hover img{transform:scale(1.05)}.photo-card:nth-child(1){grid-column:span 4;grid-row:span 2}.photo-card:nth-child(2){grid-column:span 4;grid-row:span 2}.photo-card:nth-child(3){grid-column:span 4;grid-row:span 2}.photo-card:nth-child(4){grid-column:span 3}.photo-card:nth-child(5){grid-column:span 3}.photo-card:nth-child(6){grid-column:span 6}.photo-card figcaption{position:absolute;bottom:0;left:0;right:0;color:white;padding:34px 14px 13px;font-size:13px;font-weight:600;background:linear-gradient(transparent,#171115a6)}
+    .roadtrip{background:#26252a;color:#fff;position:relative;overflow:hidden}.roadtrip:before,.roadtrip:after{content:'✿';position:absolute;color:#ffffff0a;font-size:190px}.roadtrip:before{left:-15px;top:-45px}.roadtrip:after{right:10px;bottom:-90px}.roadtrip .section-head p{color:#d3cbd0}.roadtrip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative;z-index:1}.wish{border:1px solid #ffffff20;background:#ffffff0b;border-radius:18px;padding:22px}.wish-icon{font-size:24px;margin-bottom:11px}.wish h3{font-family:'Playfair Display',Georgia,serif;font-size:19px;margin-bottom:7px}.wish p{font-size:13px;line-height:1.65;color:#d3cbd0;margin:0}.road{height:135px;max-width:660px;margin:43px auto 0;position:relative;border-top:2px dashed #ffffff42;border-bottom:2px dashed #ffffff42;display:grid;place-items:center}.road:before{content:'';position:absolute;left:0;right:0;top:50%;border-top:1px dashed #ffffff25}.road svg{position:relative;z-index:2;width:min(360px,80%)}
+    .surprise{padding:100px 0 110px;text-align:center;position:relative;overflow:hidden}.surprise-card{max-width:700px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:28px;padding:48px 30px;box-shadow:0 15px 45px #68403d0a;position:relative}.cake{font-size:55px;line-height:1;margin-bottom:20px;display:inline-block;animation:bob 2s ease-in-out infinite}.surprise h2{margin-bottom:13px}.surprise p{color:var(--muted);line-height:1.7;max-width:510px;margin:0 auto 25px}.secret{display:none;max-width:510px;margin:23px auto 0;padding:19px 20px;background:#fff4ed;border-radius:16px;color:#55484a;line-height:1.75;animation:pop .35s ease}.secret.show{display:block}.signature{font-family:'Playfair Display',Georgia,serif;font-style:italic;color:var(--berry);font-size:19px;margin-top:10px}.footer{padding:24px;text-align:center;color:#8c8083;font-size:12px;border-top:1px solid #f0e6e1}.footer span{color:var(--berry)}
+    .confetti{position:fixed;z-index:20;top:-20px;pointer-events:none;animation:fall 3.2s linear forwards;font-size:22px}
+    @keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:.2}} @keyframes bob{50%{transform:translateY(-7px) rotate(-3deg)}} @keyframes pop{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+    @media(max-width:760px){.wrap{width:min(100% - 30px,570px)}.topbar{height:65px}.hero{grid-template-columns:1fr;padding:50px 0 15px;text-align:center;gap:5px}.hero-copy{margin:auto;font-size:15px}.hero-actions{justify-content:center}.hero-art{min-height:440px}.sun{width:310px;height:310px;top:35px}.hero-photo{width:225px;height:290px;left:calc(50% - 112px)}.car-wrap{width:330px}.sticker.one{left:0}.sticker.two{right:-2px;top:165px}.sticker.three{left:0;bottom:12px}.section{padding:72px 0}.gallery{grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:10px}.photo-card:nth-child(1){grid-column:span 3;grid-row:span 2}.photo-card:nth-child(2){grid-column:span 3;grid-row:span 2}.photo-card:nth-child(3){grid-column:span 3;grid-row:span 2}.photo-card:nth-child(4){grid-column:span 3}.photo-card:nth-child(5){grid-column:span 3}.photo-card:nth-child(6){grid-column:span 6}.roadtrip-grid{grid-template-columns:1fr}.wish{padding:18px}.road{margin-top:30px}.surprise{padding:72px 0}.surprise-card{padding:38px 22px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar wrap">
+    <div class="brand"><span class="brand-mark">✿</span> birthday girl club</div>
+    <a href="#memories">little photo album ↓</a>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div>
+        <div class="eyebrow">✦ today's all about you ✦</div>
+        <h1>Happy birthday,<em>beautiful!</em></h1>
+        <p class="hero-copy">To the girl who makes every day brighter: may your year be full of <strong>happy surprises, pretty memories, big dreams</strong> and at least one ridiculously fun ride. You deserve all the good things. ♡</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#surprise">Open your birthday surprise <span>♡</span></a><a class="btn btn-light" href="#memories">See our memories</a></div>
+      </div>
+      <div class="hero-art" aria-label="Birthday photo and a cute little car illustration">
+        <div class="sun"></div>
+        <img class="hero-photo" src="assets/portrait-grand.jpg" alt="Birthday girl dressed up for a special evening">
+        <span class="sticker one">cutie with a big heart ♡</span><span class="sticker two">main character energy ✨</span><span class="sticker three">birthday road trip? 🚘</span>
+        <div class="car-wrap"><svg viewBox="0 0 500 190" role="img" aria-label="A cute blush pink sporty car"><path d="M66 123c5-24 18-40 42-49l57-21c14-26 32-37 60-37h90c29 0 47 12 67 39l40 19c22 10 34 24 38 49l7 25H45l5-18c3-5 8-7 16-7z" fill="#e68499" stroke="#292527" stroke-width="6" stroke-linejoin="round"/><path d="m178 53 58-21h84c19 0 32 9 46 27l13 17H146l17-13z" fill="#cce4f1" stroke="#292527" stroke-width="5" stroke-linejoin="round"/><path d="M254 34v42m-108 4h230" stroke="#292527" stroke-width="4"/><path d="M50 118h38m326 0h38" stroke="#ffe2a1" stroke-width="10" stroke-linecap="round"/><circle cx="139" cy="148" r="32" fill="#292527"/><circle cx="139" cy="148" r="15" fill="#f7f0e9"/><circle cx="377" cy="148" r="32" fill="#292527"/><circle cx="377" cy="148" r="15" fill="#f7f0e9"/><rect x="213" y="99" width="61" height="32" rx="16" fill="#fff" stroke="#292527" stroke-width="4"/><circle cx="243.5" cy="115" r="13" fill="#426eab"/><path d="M243 102a13 13 0 0 0-13 13h13z" fill="#fff"/><path d="M244 115h13a13 13 0 0 0-13-13z" fill="#fff"/><path d="M244 116h-13a13 13 0 0 0 13 13z" fill="#fff"/><text x="243" y="122" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#fff" font-weight="700">BMW</text></svg></div>
+      </div>
+    </section>
+
+    <section class="memory-section section" id="memories">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">the cutest little time capsule</div><h2>All your lovely little moments</h2><p>A few snapshots of your one-of-a-kind smile, your sweetest adventures and the memories that make you <em>you</em>.</p></div>
+        <div class="gallery">
+          <figure class="photo-card"><img src="assets/portrait-red.jpg" alt="A special dressed-up moment in red" loading="lazy"><figcaption>Too pretty for words ❤️</figcaption></figure>
+          <figure class="photo-card"><img src="assets/portrait-garden.jpg" alt="A peaceful outdoor memory among the trees" loading="lazy"><figcaption>Soft skies &amp; happy days 🌿</figcaption></figure>
+          <figure class="photo-card"><img src="assets/childhood.jpg" alt="A sweet childhood memory with family" loading="lazy"><figcaption>Little you, big sunshine ☀️</figcaption></figure>
+          <figure class="photo-card"><img src="assets/selfie.jpg" alt="A pretty close-up selfie" loading="lazy"><figcaption>That lovely smile ✨</figcaption></figure>
+          <figure class="photo-card"><img src="assets/kiss-selfie.jpg" alt="A playful selfie with lipstick kisses" loading="lazy"><figcaption>Certified birthday angel 💋</figcaption></figure>
+          <figure class="photo-card"><img src="assets/portrait-grand.jpg" alt="A lovely evening portrait" loading="lazy"><figcaption>Tonight, the whole world is your spotlight ✨</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadtrip section">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">your next trip around the sun</div><h2>Wishing you a year in the fast lane</h2><p>May every road lead somewhere wonderful, every dream feel a little closer, and your future BMW have the cutest passenger-seat playlist.</p></div>
+        <div class="roadtrip-grid">
+          <article class="wish"><div class="wish-icon">🏎️</div><h3>Big main-character drives</h3><p>Windows down, favorite song up, and nowhere to be but exactly where you want.</p></article>
+          <article class="wish"><div class="wish-icon">💸</div><h3>Lucky-girl abundance</h3><p>May your pockets feel as full as your heart, with little treats and lovely surprises all year.</p></article>
+          <article class="wish"><div class="wish-icon">🌷</div><h3>Joy at every turn</h3><p>More belly laughs, sweet people, golden-hour photos and reasons to celebrate you.</p></article>
+        </div>
+        <div class="road"><svg viewBox="0 0 500 190" aria-hidden="true"><path d="M66 123c5-24 18-40 42-49l57-21c14-26 32-37 60-37h90c29 0 47 12 67 39l40 19c22 10 34 24 38 49l7 25H45l5-18c3-5 8-7 16-7z" fill="#e68499" stroke="#fff" stroke-width="6" stroke-linejoin="round"/><path d="m178 53 58-21h84c19 0 32 9 46 27l13 17H146l17-13z" fill="#cce4f1" stroke="#fff" stroke-width="5" stroke-linejoin="round"/><path d="M50 118h38m326 0h38" stroke="#ffe2a1" stroke-width="10" stroke-linecap="round"/><circle cx="139" cy="148" r="32" fill="#1e1d21"/><circle cx="139" cy="148" r="15" fill="#f7f0e9"/><circle cx="377" cy="148" r="32" fill="#1e1d21"/><circle cx="377" cy="148" r="15" fill="#f7f0e9"/></svg></div>
+      </div>
+    </section>
+
+    <section class="surprise" id="surprise"><div class="wrap"><div class="surprise-card"><div class="cake">🎂</div><div class="kicker">one little birthday wish</div><h2>Ready for your surprise?</h2><p>Take a breath, close your eyes for a second, and make the biggest, sparkliest wish you can think of. Then tap below ♡</p><button class="btn btn-primary" id="wishBtn">Make a wish ✨</button><div class="secret" id="secret">I hope this new year brings you everything you quietly wish for and so much more. Keep being your lovely, funny, wonderful self. You make life sweeter just by being in it. Happy birthday, bestie! ♡<div class="signature">with so much love, your friend</div></div></div></div></section>
+  </main>
+  <footer class="footer">Made with <span>♡</span>, a little sparkle, and birthday-girl energy.</footer>
+  <script>
+    const wishBtn=document.getElementById('wishBtn'),secret=document.getElementById('secret');
+    wishBtn.addEventListener('click',()=>{secret.classList.add('show');wishBtn.textContent='Wish sent into the universe 💫';wishBtn.disabled=true;wishBtn.style.opacity='.78';const bits=['💖','✨','🌸','💸','♡','⭐'];for(let i=0;i<38;i++){const el=document.createElement('span');el.className='confetti';el.textContent=bits[Math.floor(Math.random()*bits.length)];el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*.9+'s';el.style.fontSize=(14+Math.random()*18)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),4200)}});
+  </script>
+</body>
+</html>
